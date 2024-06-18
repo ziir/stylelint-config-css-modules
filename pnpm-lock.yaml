@@ -34,8 +34,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0
       viteup:
-        specifier: 0.0.4-alpha.2
-        version: 0.0.4-alpha.2(rollup@4.17.2)
+        specifier: 0.0.4-beta.3
+        version: 0.0.4-beta.3(rollup@4.17.2)
 
 packages:
 
@@ -1179,8 +1179,8 @@ packages:
       jsdom:
         optional: true
 
-  viteup@0.0.4-alpha.2:
-    resolution: {integrity: sha512-wS7OryzfRFli5EfSzvI6o8mF6B06+Ww94iu2aeazbzl5qpfdU2h4WsyYNHRjuJ02dZanf8HNw6VfzmwwG+SavA==}
+  viteup@0.0.4-beta.3:
+    resolution: {integrity: sha512-ttlLrMehVImcrJir4Q2MU+/zjoQmQ4IA/lk1PmWsUEVq7NWUFprsV6b578K8nvf02Z/uVTgt6bGISVtaI63/4g==}
     hasBin: true
 
   walk-up-path@3.0.1:
@@ -2236,7 +2236,7 @@ snapshots:
       - supports-color
       - terser
 
-  viteup@0.0.4-alpha.2(rollup@4.17.2):
+  viteup@0.0.4-beta.3(rollup@4.17.2):
     dependencies:
       resolve-import: 1.4.5
       vite: 5.2.12
