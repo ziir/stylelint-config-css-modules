@@ -1,6 +1,5 @@
 import path from 'node:path';
-import test from 'node:test';
-import assert from 'node:assert/strict';
+import { it, expect } from 'vitest';
 import stylelint from 'stylelint';
 
 const config = {
@@ -10,7 +9,7 @@ const config = {
   ],
 };
 
-test('should not results errors nor warnings', async () => {
+it('should not results errors nor warnings', async () => {
   const data = await stylelint.lint({
     config,
     files: 'test/*.scss',
@@ -19,6 +18,6 @@ test('should not results errors nor warnings', async () => {
   const { errored, results } = data;
   const { warnings } = results[0];
 
-  assert.equal(errored, false, 'no errors');
-  assert.equal(warnings.length, 0, 'no warnings');
+  expect(errored, 'no errors').toBe(false);
+  expect(warnings.length, 'no warnings').toEqual(0);
 });
